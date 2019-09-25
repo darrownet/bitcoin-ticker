@@ -9,8 +9,6 @@ const Transactions = ({transactions, transactionReceived}) => {
 
   useEffect(() => {
     websocket.onmessage = (evt) => {
-      console.log('websocket message...');
-      console.log(JSON.parse(evt.data));
       transactionReceived(JSON.parse(evt.data));
     };
   });

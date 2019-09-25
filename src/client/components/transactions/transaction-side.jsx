@@ -5,9 +5,9 @@ import Transaction from "./transaction";
 const TransactionSide = ({data, type}) => {
   const tx = (type === 'input' ? data.prev_out : data);
   return (
-    <li>
-      <div>address: {tx.addr}</div>
-      <div>value: {tx.value}</div>
+    <li className="transaction-side">
+      <div><span className="emphasize">address:</span> {tx.addr}</div>
+      <div><span className="emphasize">value:</span> {tx.value}</div>
     </li>
   );
 };

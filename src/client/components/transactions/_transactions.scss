@@ -1,0 +1,61 @@
+.transactions {
+  border-top: 1px solid black;
+
+  h2 {
+    font-size: 1em;
+  }
+
+  h3 {
+    font-size: .75em;
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+
+  .emphasize {
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+    margin-right: 4px;
+    text-align: right;
+  }
+  .deemphasize {
+    font-weight: normal;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 86.6px;
+    border-color: transparent transparent transparent #dedede;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 150px);
+  }
+
+  .transaction {
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+  }
+
+  .transaction-side {
+    margin: 5px 0;
+    .emphasize {
+      width: 68px;
+      text-align: right;
+    }
+  }
+
+  .inputs-outputs {
+    position: relative;
+    background: white;
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  .inputs, .outputs {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+}
