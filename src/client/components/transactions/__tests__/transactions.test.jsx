@@ -10,7 +10,6 @@ Enzyme.configure({ adapter: new Adapter() });
 import Transactions from '../transactions';
 import {createStore} from "redux";
 import {reducer} from "../../../core/reducers/reducer";
-import websocket from "../../../core/services/data.service";
 
 describe('<Transactions />', () => {
   it('should render correctly', () => {
