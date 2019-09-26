@@ -1,8 +1,5 @@
-const events = require('events');
 const express = require('express');
-const fs = require('fs');
 const http = require ('http');
-const socketIO = require('socket.io');
 
 const port = 8080;
 
@@ -13,14 +10,7 @@ const app = express()
   });
 
 const server = http.createServer(app);
-const io = socketIO(server);
 
-io.on('connection', (socket) => {
-
-  console.log('client connected');
-
-  socket.on('disconnect', () => {
-    console.log('clien disconnected');
-  });
-
+server.listen(port, () => {
+  console.log(`SERVER RUNNING ON PORT ${port}`);
 });
