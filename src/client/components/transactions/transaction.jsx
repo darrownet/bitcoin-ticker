@@ -18,7 +18,7 @@ const Transaction = ({data}) => {
   return(
     <li className="transaction">
       <h2>hash: <span className="deemphasize">{data.hash}</span></h2>
-      <div><span className="emphasize">time:</span> {timeConverter(data.time * 1000)}</div>
+      <div className="time"><span className="emphasize">time:</span> {timeConverter(data.time * 1000)}</div>
       <div className="inputs-outputs">
         <div className="inputs">
           <h3>Inputs</h3>
@@ -38,7 +38,9 @@ const Transaction = ({data}) => {
           </ul>
         </div>
       </div>
-      <div><span className="emphasize">mining fee:</span> {calculateMinerFee(data)}</div>
+      <div className="mining-fee">
+        <span className="emphasize">mining fee:</span> {calculateMinerFee(data)}
+      </div>
     </li>
   );
 };

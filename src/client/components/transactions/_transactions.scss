@@ -3,6 +3,7 @@
 
   h2 {
     font-size: 1em;
+    padding-left: 10px;
   }
 
   h3 {
@@ -20,6 +21,15 @@
   }
   .deemphasize {
     font-weight: normal;
+  }
+
+  .mining-fee {
+    text-align: right;
+    padding-right: 30px;
+  }
+
+  .time {
+    padding-left: 10px;
   }
 
   .triangle {
