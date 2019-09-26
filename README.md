@@ -10,7 +10,7 @@
 ----
 
 ### Installation
-Open a terminal, navigate to the root directory of this repository, and type the command **npm run install**.
+Open a terminal, navigate to the root directory of this repository, and type the command **npm install**.
 
 ----
 
