@@ -11,7 +11,7 @@
     "build": "npm run clean-build && webpack --env.production -p --config=configs/webpack/webpack.prod",
     "clean-build": "rm -f -r -d build",
     "server": "nodemon ./build/server.js",
-    "start": "nodemon ./src/server/server.js & webpack-dev-server --open --watch --config=configs/webpack/webpack.dev",
+    "start": "webpack-dev-server --open --watch --config=configs/webpack/webpack.dev",
     "test": "jest --coverage --config=configs/jest.json"
   },
   "devDependencies": {
