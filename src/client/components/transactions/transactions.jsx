@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
 import actions from "../../core/actions/action-creators";
@@ -7,11 +7,11 @@ import Transaction from "./transaction";
 
 const Transactions = ({transactions, transactionReceived}) => {
 
-  useEffect(() => {
+  if (typeof window !== 'undefined') {
     websocket.onmessage = (evt) => {
       transactionReceived(JSON.parse(evt.data));
     };
-  });
+  }
 
   return(
     <ul className="transactions">
