@@ -7,19 +7,6 @@ import StreamController from "./stream-controller/stream-controller";
 
 let App;
 App = ({store}) => {
-
-  useEffect(() => {
-    websocket.onopen = (evt) => {
-      console.log('websocket connected...');
-    };
-    websocket.onclose = (evt) => {
-      console.log('websocket close...');
-    };
-    websocket.onerror = (evt) => {
-      console.log('websocket error...');
-    };
-  }, []);
-
   return (
     <Provider store={store}>
       <div className="bitcoin-ticker">
