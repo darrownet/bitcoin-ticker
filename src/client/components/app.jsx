@@ -1,7 +1,6 @@
-import React, {useEffect} from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import { connect, Provider } from "react-redux";
-import websocket from "../core/services/data.service"
+import {Provider } from "react-redux";
 import Transactions from "./transactions/transactions";
 import StreamController from "./stream-controller/stream-controller";
 
@@ -18,6 +17,8 @@ App = ({store}) => {
   );
 };
 
-App.propTypes = {};
+App.propTypes = {
+  store: PropTypes.object.isRequired
+};
 
 export default App;
