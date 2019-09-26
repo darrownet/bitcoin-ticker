@@ -40,7 +40,7 @@
     border-color: transparent transparent transparent #dedede;
     position: absolute;
     top: calc(50% - 20px);
-    left: calc(50% - 150px);
+    left: calc(50% - 130px);
   }
 
   .transaction {
@@ -53,6 +53,12 @@
     .emphasize {
       width: 68px;
       text-align: right;
+    }
+    > div {
+      width: 75%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 
