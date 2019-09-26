@@ -12,6 +12,9 @@ import {createStore} from "redux";
 import {reducer} from "../../core/reducers/reducer";
 
 describe('<App />', () => {
+
+  const WebSocket = {};
+
   it('should render correctly', () => {
     const component = render(<App store={createStore(reducer)} />);
     expect(component).toMatchSnapshot();

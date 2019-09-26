@@ -4,14 +4,14 @@ exports[`<App /> should render correctly 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "order-tracker",
+      "class": "bitcoin-ticker",
     },
     "children": Array [
       Object {
         "attribs": Object {},
         "children": Array [
           Object {
-            "data": "BitCoin Ticker",
+            "data": "BitCoin BlockChain Ticker",
             "next": null,
             "parent": [Circular],
             "prev": null,
@@ -20,12 +20,178 @@ initialize {
         ],
         "name": "h1",
         "namespace": "http://www.w3.org/1999/xhtml",
-        "next": null,
+        "next": Object {
+          "attribs": Object {
+            "class": "stream-controller",
+          },
+          "children": Array [
+            Object {
+              "data": "Start Stream",
+              "next": null,
+              "parent": [Circular],
+              "prev": null,
+              "type": "text",
+            },
+          ],
+          "name": "button",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": Object {
+            "attribs": Object {
+              "class": "transactions",
+            },
+            "children": Array [],
+            "name": "ul",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": [Circular],
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+          },
+        },
         "parent": [Circular],
         "prev": null,
         "type": "tag",
         "x-attribsNamespace": Object {},
         "x-attribsPrefix": Object {},
+      },
+      Object {
+        "attribs": Object {
+          "class": "stream-controller",
+        },
+        "children": Array [
+          Object {
+            "data": "Start Stream",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "button",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {
+            "class": "transactions",
+          },
+          "children": Array [],
+          "name": "ul",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": null,
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+          },
+        },
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {},
+          "children": Array [
+            Object {
+              "data": "BitCoin BlockChain Ticker",
+              "next": null,
+              "parent": [Circular],
+              "prev": null,
+              "type": "text",
+            },
+          ],
+          "name": "h1",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": null,
+          "type": "tag",
+          "x-attribsNamespace": Object {},
+          "x-attribsPrefix": Object {},
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+        },
+      },
+      Object {
+        "attribs": Object {
+          "class": "transactions",
+        },
+        "children": Array [],
+        "name": "ul",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "class": "stream-controller",
+          },
+          "children": Array [
+            Object {
+              "data": "Start Stream",
+              "next": null,
+              "parent": [Circular],
+              "prev": null,
+              "type": "text",
+            },
+          ],
+          "name": "button",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": Object {
+            "attribs": Object {},
+            "children": Array [
+              Object {
+                "data": "BitCoin BlockChain Ticker",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "h1",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": [Circular],
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {},
+            "x-attribsPrefix": Object {},
+          },
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+        },
       },
     ],
     "name": "div",
