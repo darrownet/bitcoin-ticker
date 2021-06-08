@@ -46,4 +46,4 @@ Open a terminal, navigate to the root directory of this repository, and type the
 ----
 
 ### Troubleshooting:
-Kills all node processes: pkill -f node  
+Kills all node processes: pkill -f node
